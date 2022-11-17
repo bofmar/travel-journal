@@ -3,3 +3,26 @@
 .App {
   font-family: 'Inter', sans-serif;
 }
+
+header {
+  background-color: #F55A5A;
+  color: white;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+header > img {
+  height: 60%;
+  filter: invert(100%) sepia(0%) saturate(7441%) hue-rotate(35deg) brightness(111%) contrast(100%);
+}
+
+header > h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.075em;
+}
+
