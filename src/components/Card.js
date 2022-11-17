@@ -7,7 +7,7 @@ export default function Card({ imageName, country, link, name, dateIn, dateOut, 
       <img src={require(`../images/${imageName}.jpeg`)} className='card--image' />
       <div className='card--meta'>
         <img src={locationIcon} />
-        <span className='card--country'>{country}</span>
+        <span className='card--country'>{country.toUpperCase()}</span>
         <span className='card--link'><a href={`${link}`} target='__blank'>View on Google Maps</a></span>
       </div>
       <h1>{name}</h1>

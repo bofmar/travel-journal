@@ -26,3 +26,74 @@ header > h1 {
   letter-spacing: -0.075em;
 }
 
+.card--holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 470px;
+  height: 168px;
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-areas:
+    'image meta'
+    'image name'
+    'image dates'
+    'image desc';
+
+  font-size: 10px;
+  color: #2B283A;
+}
+
+.card > * {
+  margin-left: 10px;
+}
+
+.card--image{
+  margin-left: 0;
+  grid-area: image;
+  width: 125px;
+  height: 168px;
+  border-radius: 8px;
+}
+
+.card--meta {
+  grid-area: meta;
+  align-self: end;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card--meta > img {
+  width: 7px;
+  height: 10px;
+  filter: invert(45%) sepia(83%) saturate(2878%) hue-rotate(333deg) brightness(119%) contrast(93%);
+}
+
+.card--country {
+  letter-spacing: 0.17em;
+}
+
+.card--link > a{
+  color: #918E9B;
+}
+
+.card > h1 {
+  grid-area: name;
+  font-size: 25px;
+}
+
+.card--dates{
+  grid-area: dates;
+  align-self: start;
+  font-weight: bold;
+}
+
+.card--review {
+  grid-area: desc;
+  align-self: start;
+}
